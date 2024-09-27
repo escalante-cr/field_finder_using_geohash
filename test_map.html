@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2b2fd7edfa190aa179afc6900deaad20 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2b2fd7edfa190aa179afc6900deaad20" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2b2fd7edfa190aa179afc6900deaad20 = L.map(
+                "map_2b2fd7edfa190aa179afc6900deaad20",
+                {
+                    center: [36.10370337031782, -121.02718653157353],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6faab18b1b854bb7c4534be262ff72d7 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6faab18b1b854bb7c4534be262ff72d7.addTo(map_2b2fd7edfa190aa179afc6900deaad20);
+        
+    
+            var tile_layer_60a2b67b9f28889d94b8639a13abf098 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{x}/{y}",
+                {"attribution": "ESRI World Boundaries and Places", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_60a2b67b9f28889d94b8639a13abf098.addTo(map_2b2fd7edfa190aa179afc6900deaad20);
+        
+    
+            var marker_b7d1907489419d87146c24431ea9b7f1 = L.marker(
+                [36.10370337031782, -121.02718653157353],
+                {}
+            ).addTo(map_2b2fd7edfa190aa179afc6900deaad20);
+        
+    
+        var popup_b25c64e3dac0c88b511ff877ea7ff433 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3eb5d16cb7e2043ac7cc57492d0f0c37 = $(`<div id="html_3eb5d16cb7e2043ac7cc57492d0f0c37" style="width: 100.0%; height: 100.0%;">Point at (36.10370337031781673431396484375), -121.0271865315735340118408203125)</div>`)[0];
+                popup_b25c64e3dac0c88b511ff877ea7ff433.setContent(html_3eb5d16cb7e2043ac7cc57492d0f0c37);
+            
+        
+
+        marker_b7d1907489419d87146c24431ea9b7f1.bindPopup(popup_b25c64e3dac0c88b511ff877ea7ff433)
+        ;
+
+        
+    
+    
+            var tile_layer_a69bfb99935b826069da3ac414684bb1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_58ed79ed00aab6dd78cbb74216bdcb41 = new L.Control.MiniMap(
+                tile_layer_a69bfb99935b826069da3ac414684bb1,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 500, "minimized": false, "position": "bottomright", "toggleDisplay": true, "width": 400, "zoomAnimation": false, "zoomLevelFixed": 14, "zoomLevelOffset": -5}
+            );
+            map_2b2fd7edfa190aa179afc6900deaad20.addControl(mini_map_58ed79ed00aab6dd78cbb74216bdcb41);
+        
+    
+            var layer_control_71bfaeb2c88707a76c518ea20db63fb4_layers = {
+                base_layers : {
+                    "esriworldimagery" : tile_layer_6faab18b1b854bb7c4534be262ff72d7,
+                },
+                overlays :  {
+                    "Roads and Labels" : tile_layer_60a2b67b9f28889d94b8639a13abf098,
+                },
+            };
+            let layer_control_71bfaeb2c88707a76c518ea20db63fb4 = L.control.layers(
+                layer_control_71bfaeb2c88707a76c518ea20db63fb4_layers.base_layers,
+                layer_control_71bfaeb2c88707a76c518ea20db63fb4_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2b2fd7edfa190aa179afc6900deaad20);
+
+        
+</script>
+</html>
